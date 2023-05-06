@@ -11,7 +11,7 @@ section{
 div[class="base-apparel__container"] {
   order: 1;
   margin: var(--gap-60) 0 0 var(--gap-30); 
-  flex-basis: 50%; 
+  flex-basis: 40%; 
 }
 
 
@@ -19,7 +19,7 @@ picture {
   order: 2; 
   margin-top: 0; 
   min-height: 100vh;
-  flex-basis: 50%; 
+  flex-basis: 60%; 
 }
 
 img[class="base-apparel__image-illustration"] { min-height: 100vh; }
