@@ -10,9 +10,11 @@ section{
 
 div[class="base-apparel__container"] {
   order: 1;
-  margin: var(--gap-60) 0 0 var(--gap-30); 
-  flex-basis: 40%; 
+  margin: var(--gap-60)  0 0 var(--gap-90); 
+  flex-basis: 50%; 
 }
+
+a[href="#"] {left: 9rem; }
 
 
 picture {
