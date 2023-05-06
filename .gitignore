@@ -16,3 +16,4 @@
 
 # Prevent the git from tracking the node_modules folder and the .parcel-cache folder. 
 node_modules
+.parcel-cache
