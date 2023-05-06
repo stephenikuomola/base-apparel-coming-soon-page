@@ -1,0 +1,173 @@
+section {
+  background-image: var(--gradient-linear-hero); 
+  display:flex; 
+  flex-direction: column; 
+  position: relative; 
+  gap: var(--gap-70); 
+  margin-inline: auto;
+}
+
+section, main { min-height: 100vh; }
+
+/* Working on the image */
+picture {
+  width: 100%; 
+  order: 1; 
+  margin-top: var(--gap-90); 
+}
+
+img[class="base-apparel__image-illustration"] {
+  width: 100%; 
+  filter: saturate(1.5); 
+}
+
+/* Working on the content */
+div[class="base-apparel__container"] {
+  order: 2; 
+  margin-inline: var(--gap-30); 
+  
+}
+
+a[href="#"] {
+  position: absolute; 
+  top:31px; 
+  left: 32px; 
+  
+}
+
+.base-apparel__heading {
+  text-align: center; 
+  font-style:normal; 
+  font-weight: var(--fw-300); 
+  font-size: var(--fs-5); 
+  letter-spacing: var(--letter-spacing-wider); 
+  line-height: var(--line-height-tight); 
+  color: var(--desaturated-red);
+  text-transform: uppercase; 
+  margin-bottom: var(--space-4); 
+}
+
+
+.base-apparel__heading span {
+  font-weight: var(--fw-600); 
+  color: var(--dark-grayish-red); 
+  display: block; 
+}
+
+.base-apparel__text {
+  text-align: center; 
+  margin-bottom: var(--space-6); 
+  font-style: normal; 
+  font-weight: var(--fw-400); 
+  font-size: var(--fs-1);
+  color: var(--desaturated-red); 
+}
+
+/* Working with the form */
+form[class="form"] {
+  position: relative; 
+  margin-bottom: var(--space-1); 
+}
+
+.sr-only {
+  position:absolute; 
+  overflow: hidden; 
+  white-space: nowrap;
+  top: var(--sr-only-top); 
+  left: var(--sr-only-left); 
+  margin: var(--sr-only-margin); 
+  padding: var(--sr-only-padding); 
+  height: var(--sr-only-height); 
+  width: var(--sr-only-width);
+  border-width: var(--sr-only-border-width);  
+}
+
+input[type="email"] {
+  /* This variable has a color with some level of opacity */
+  --desaturated-red: hsl(0, 36%, 70%, 0.5); 
+  width: 100%; 
+  outline: none; 
+  border: 1px solid var(--desaturated-red); 
+  background: none; 
+  mix-blend-mode: normal; 
+  border-radius: var(--radius-10); 
+  padding: var(--space-4) 0 var(--space-3) var(--space-6); 
+  color: var(--dark-grayish-red); 
+  font-style: normal; 
+  font-weight: var(--fw-400); 
+  font-size: var(--fs-1); 
+  line-height: var(--line-height-relaxed); 
+  font-family: inherit;   
+}
+
+input[class="email-error"] {
+  border: 2px solid var(--soft-red)
+}
+
+
+input[type="email"]::placeholder {
+  --desaturated-red: hsl(0, 36%, 70%, 0.5); 
+  color: var(--desaturated-red);
+  font: inherit; 
+}
+
+
+button[class="submit-btn"] {
+  border: none; 
+  border-radius: var(--radius-10); 
+  background-image: var(--gradient-linear-button-normal);
+  padding: var(--space-4) var(--space-6-7) var(--space-3) var(--space-6-7);
+  position: absolute; 
+  top: 0;
+  right: -2px; 
+  bottom: calc(20% - var(--space-3));
+  box-shadow: var(--box-shadow); 
+  cursor: pointer; 
+}
+
+
+
+img[class~="error-icon"] {
+  position: absolute; 
+  top: var(--space-3-4);  
+  right: calc(20px + var(--space-6-7) + var(--space-6-7)); 
+  opacity: 0; 
+  visibility: hidden;
+  transition: opacity 0.5s ease; 
+}
+
+img[class~="error-icon"][class~="error-icon__active"]{
+  visibility: visible;
+  opacity: 1; 
+}
+
+
+
+span[class~="error-message"] {
+  font-style: normal; 
+  font-weight: var(--fw-400); 
+  font-size: var(--fs-1); 
+  color: var(--soft-red); 
+  line-height: var(--line-height-normal); 
+  margin-inline-start: var(--space-6); 
+}
+
+
+/* For devices that their primary input is a hover state
+ */
+
+ @media (any-hover: hover) {
+  button[class="submit-btn"]:hover::after{
+    background-color: hsla(0, 0%, 100%, 0.5); 
+    box-shadow: var(--box-shadow);
+    content: ""; 
+    display: inline-block; 
+    position: absolute; 
+    top: 0;
+    right: 0px; 
+    bottom: calc(21% - var(--space-3)); 
+    padding: var(--space-4) var(--space-6-7) var(--space-3) var(--space-6-7);
+    width: 100%; 
+    border-radius: var(--radius-10); 
+  }
+ }

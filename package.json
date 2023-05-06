@@ -1,0 +1,28 @@
+{
+  "name": "base-apparel-coming-soon-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)",
+  "source": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraversetheDOM/base-apparel-coming-soon-page.git"
+  },
+  "keywords": [],
+  "author": "Stephen Damilola Chidiebere Ikuomola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TraversetheDOM/base-apparel-coming-soon-page/issues"
+  },
+  "homepage": "https://github.com/TraversetheDOM/base-apparel-coming-soon-page#readme",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "parcel": "^2.8.3"
+  }
+}

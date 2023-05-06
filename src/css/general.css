@@ -1,17 +1,6 @@
-# Base Apparel Coming Soon Style Documentation
+:root {
 
-- Mobile 375px
-- Desktop 1440px
-
-## Google Link Fonts
-
-```css
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-```
-
-## Typography
-
-```css
+/* Typography */
 --ff-Josefin-Sans: 'Josefin Sans', sans-serif;
 --fw-300: 300; 
 --fw-400: 400; 
@@ -28,41 +17,20 @@
 --letter-spacing-wide: 0.025em; 
 --letter-spacing-wider: 0.05em; 
 --letter-spacing-widest: 0.1em; 
-
-/* Font Size */
 --fs-1: clamp(1.20rem, calc(1.12rem + 0.33vw), 1.60rem);
 --fs-2: clamp(1.696rem, calc(1.584rem + 0.47vw), 2.26rem);
 --fs-3: clamp(2.40rem, calc(2.24rem + 0.66vw), 3.2rem);
 --fs-4: clamp(3.39rem, calc(3.18rem + 0.93vw), 4.53rem);
 --fs-5: clamp(4.8rem, calc(4.496rem + 1.32vw), 6.4rem);
-```
 
-## Color
-
-```css
+/* Color */
 --desaturated-red: hsl(0, 36%, 70%); 
 --soft-red: hsl(0, 93%, 68%); 
 --dark-grayish-red: hsl(0, 6%, 24%); 
 --white: hsl(0, 0%, 100%); 
-```
 
-## Gradients
 
-```css
---gradient-linear-button-hover: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
---gradient-linear-button-normal: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
---gradient-linear-hero: linear-gradient(150.03deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 84.51%); 
-```
-
-## Shadows
-
-```css
---box-shadow: 0px 15px 20px hsla(0, 43%, 60%, 0.25); 
-```
-
-## Space
-
-```css
+/* Spacing */
 --space-1: clamp(0.304rem, calc(0.288rem + 0.08vw), 0.40rem);
 --space-2: clamp(0.608rem, calc(0.56rem + 0.17vw), 0.80rem);
 --space-3: clamp(0.896rem, calc(0.848rem + 0.25vw), 1.2rem);
@@ -82,11 +50,30 @@
 --space-8-9: clamp(4.80rem, calc(3.888rem + 3.97vw), 9.6rem);
 --space-4-6: clamp(1.20rem, calc(0.82rem + 1.65vw), 3.20rem);
 --space-6-8: clamp(2.40rem, calc(1.632rem + 3.31vw), 6.40rem);
-```
+--space-7-10: clamp(3.6rem, calc(-3.824rem + 32.26vw), 13.6rem);
 
-## Gap
+/* Border-RAadius */
+--radius-1: 2px; 
+--radius-2: 4px; 
+--radius-3: 6px;
+--radius-4: 8px; 
+--radius-5: 12px; 
+--radius-6: 16px; 
+--radius-7: 20px; 
+--radius-8: 24px; 
+--radius-9: 26px; 
+--radius-10: 28px; 
+--radius-11: 30px; 
+--radius-12: 32px; 
+--radius-13: 34px; 
+--radius-14: 36px; 
+--radius-15: 38px; 
+--radius-16: 40px;
 
-```css
+/* Shadow */
+--box-shadow: 0px 15px 20px rgba(197, 109, 109, 0.25); 
+
+/* Gap */
 --gap-0: 0px; 
 --gap-1: 1px; 
 --gap-1_25: 0.125rem; 
@@ -121,11 +108,14 @@
 --gap-180: 18rem; 
 --gap-200: 20rem; 
 --gap-240: 24rem;
-```
 
-## Display
 
-```css
+/* Gradient */
+--gradient-linear-button-normal: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+--gradient-linear-hero: linear-gradient(150.03deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 84.51%); 
+
+
+/* Display */
 --hidden: none; 
 --block: block; 
 --inline: inline; 
@@ -134,37 +124,47 @@
 --inline-flex: inline-flex; 
 --grid: grid; 
 --inline-grid: inline-grid;
-```
 
-## Border Radius
 
-```css
---radius-1: 2px; 
---radius-2: 4px; 
---radius-3: 6px;
---radius-4: 8px; 
---radius-5: 12px; 
---radius-6: 16px; 
---radius-7: 20px; 
---radius-8: 24px; 
---radius-9: 26px; 
---radius-10: 28px; 
---radius-11: 30px; 
---radius-12: 32px; 
---radius-13: 34px; 
---radius-14: 36px; 
---radius-15: 38px; 
---radius-16: 40px;
-```
+/* Screen Readers */
+--sr-only-width: 1px; 
+--sr-only-height: 1px; 
+--sr-only-padding: 0px; 
+--sr-only-margin: -1px; 
+--sr-only-border-width: 0; 
+--sr-only-left: -1000px; 
+--sr-only-top: auto; 
+}
 
-## Screen Readers
 
-```css
-  --sr-only-width: 1px; 
-  --sr-only-height: 1px; 
-  --sr-only-padding: 0px; 
-  --sr-only-margin: -1px; 
-  --sr-only-border-width: 0; 
-  --sr-only-left: -1000px; 
-  --sr-only-top: auto; 
-```
+*, *::before, *::after { box-sizing:border-box; }
+
+* { padding: 0; margin: 0; }
+
+html { 
+  font-family: var(--ff-Josefin-Sans); 
+  font-size: 62.5%; 
+}
+
+body {
+  width: 100%; 
+  min-height: 100vh; 
+  text-rendering: optimizeSpeed; 
+  line-height: var(--line-height-normal); 
+  overflow-x: hidden; 
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+img, picture {
+  max-width: 100%; 
+  display: block; 
+}
+
+
+button {appearance: none; background: none; }
+

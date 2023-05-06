@@ -1,0 +1,30 @@
+
+section{
+  flex-direction: row; 
+  align-items: center; 
+  gap: calc(30px + var(--space-9));
+  background-image:url(../../assets/images/bg-pattern-desktop.svg), var(--gradient-linear-hero); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+}
+
+div[class="base-apparel__container"] {
+  order: 1;
+  margin: var(--gap-60) 0 0 var(--gap-30); 
+  flex-basis: 50%; 
+}
+
+
+picture {
+  order: 2; 
+  margin-top: 0; 
+  min-height: 100vh;
+  flex-basis: 50%; 
+}
+
+img[class="base-apparel__image-illustration"] { min-height: 100vh; }
+
+
+.base-apparel__heading, .base-apparel__text {
+  text-align: left; 
+}
