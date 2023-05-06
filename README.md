@@ -1,16 +1,11 @@
-```html
+
 <div align="center">
-	
 	<img src="./assets/images/logo.svg" />
-	
 	<h2 align="center">Base Apparel - Coming Soon Landing Page</h2>
-
 	Base Apparel is a fashion store company which wis about to lunch soon, <br/> Responsive for all devices using HTML, CSS, JavaScript. 
-
+	<br/>
 	<a href="https://base-apparel-NG.netlify.app"/><strong>➥ Live Demo</strong></a>
-
 </div>
-```
 
 <br/>
 
