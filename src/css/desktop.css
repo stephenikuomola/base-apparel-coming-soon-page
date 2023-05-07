@@ -14,7 +14,7 @@ div[class="base-apparel__container"] {
   flex-basis: 50%; 
 }
 
-a[href="#"] {left: 9rem; }
+a[href] {left: 9rem; }
 
 
 picture {
