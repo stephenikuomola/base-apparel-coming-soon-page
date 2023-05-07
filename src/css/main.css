@@ -86,7 +86,6 @@ input[type="email"] {
   /* This variable has a color with some level of opacity */
   --desaturated-red: hsl(0, 36%, 70%, 0.5); 
   width: 100%; 
-  outline: none; 
   border: 1px solid var(--desaturated-red); 
   background: none; 
   mix-blend-mode: normal; 
@@ -97,12 +96,14 @@ input[type="email"] {
   font-weight: var(--fw-400); 
   font-size: var(--fs-1); 
   line-height: var(--line-height-relaxed); 
-  font-family: inherit;   
+  font-family: inherit;  
 }
 
+
 input[class="email-error"] {
-  border: 2px solid var(--soft-red)
+  border: 2px solid var(--soft-red); 
 }
+
 
 
 input[type="email"]::placeholder {
