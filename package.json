@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TraversetheDOM/base-apparel-coming-soon-page.git"
+    "url": "git+https://github.com/stephenikuomola/base-apparel-coming-soon-page.git"
   },
   "keywords": [],
   "author": "Stephen Damilola Chidiebere Ikuomola",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TraversetheDOM/base-apparel-coming-soon-page/issues"
+    "url": "https://github.com/stephenikuomola/base-apparel-coming-soon-page/issues"
   },
-  "homepage": "https://github.com/TraversetheDOM/base-apparel-coming-soon-page#readme",
+  "homepage": "https://github.com/stephenikuomola/base-apparel-coming-soon-page#readme",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.8.3",
     "@parcel/transformer-webmanifest": "^2.8.3",
